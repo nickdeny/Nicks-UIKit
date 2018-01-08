@@ -3,7 +3,8 @@ A lightweight and modular front-end framework for developing web interfaces fast
 
 ### Installing
 Just download the archive, download and attach a files to your project. It's easy!
-```<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html>
     <head>
         <title>I'm using Nick's UIKit now!</title>
@@ -14,7 +15,8 @@ Just download the archive, download and attach a files to your project. It's eas
     </head>
     <body>
     </body>
-</html>```
+</html>
+```
 
 ### Documentation
 See more on [Documentation](http://ui.nickdeny.com)
