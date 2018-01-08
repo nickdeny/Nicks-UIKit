@@ -1,0 +1,418 @@
+@charset "UTF-8";
+/*!
+ * 
+ * Title: 	Nick's UI Kit
+ * Author:  nickdeny
+ * URL:		  ui.nickdeny.com
+ * Version: 0.2
+ * 
+ */
+/**
+ * Defaults
+ */
+body {
+  margin: 0;
+  min-width: 320px; }
+
+a {
+  color: #29abe2;
+  text-decoration: none; }
+  a, a:hover {
+    transition: all 0.1s ease; }
+  a:hover {
+    color: #1987b5; }
+  a, a:hover {
+    transition: all .1s ease; }
+
+.hidden {
+  display: none !important; }
+
+/**
+ * Typography
+ */
+body {
+  font-size: 16px;
+  line-height: 1.428;
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 12px;
+  margin-bottom: 6px; }
+
+h1 {
+  font-size: 38px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 12px; }
+
+p {
+  margin-top: 8px;
+  margin-bottom: 4px; }
+
+mark {
+  padding-right: 3px;
+  padding-left: 3px;
+  background-color: #f7bd40; }
+
+kbd {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 8px;
+  box-shadow: inset 0 -2px 0 #e0e0e0;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0; }
+
+ul {
+  margin: 0;
+  padding-left: 20px; }
+
+ul.inline > li {
+  display: inline-block; }
+
+ul.unstyled {
+  list-style: none;
+  padding-left: 0; }
+
+.text--uppercase {
+  text-transform: uppercase; }
+
+.text--italic {
+  font-style: italic; }
+
+.text--brand {
+  color: #29abe2; }
+
+.text--danger {
+  color: #eb2019; }
+
+.text--success {
+  color: #95cd8b; }
+
+*[rel="tooltip"] {
+  border-bottom: 1px dotted #111; }
+
+#tooltip {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.2;
+  background: #111;
+  position: absolute;
+  z-index: 9100;
+  word-break: break-all;
+  padding: 6px 14px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px; }
+  #tooltip:after {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #111;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    margin-left: -4.5px; }
+  #tooltip.top:after {
+    border-top-color: transparent;
+    border-bottom: 9px solid #111;
+    top: -16px;
+    bottom: auto; }
+  #tooltip.right {
+    right: 7px;
+    left: auto;
+    margin: 0; }
+  #tooltip.left {
+    left: 7px;
+    margin: 0; }
+
+#tooltip.top:after {
+  border-top-color: transparent;
+  border-bottom: 9px solid #111;
+  top: -20px;
+  bottom: auto; }
+
+#tooltip.left:after {
+  left: 10px;
+  margin: 0; }
+
+#tooltip.right:after {
+  right: 10px;
+  left: auto;
+  margin: 0; }
+
+/**
+ * Buttons
+ */
+.btn {
+  padding: 6px 14px;
+  display: inline-block;
+  white-space: nowrap;
+  border: 1px solid #29abe2;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  background-color: transparent;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 5px; }
+  .btn, .btn:hover {
+    transition: all 0.1s ease; }
+  .btn:hover {
+    color: #fff;
+    background-color: #29abe2; }
+  .btn--brand {
+    color: #fff;
+    border-color: #29abe2;
+    background-color: #29abe2; }
+    .btn--brand:hover {
+      border-color: #1987b5;
+      background-color: #1987b5; }
+  .btn--danger {
+    color: #fff;
+    border-color: #eb2019;
+    background-color: #eb2019; }
+    .btn--danger:hover {
+      border-color: #b71510;
+      background-color: #b71510; }
+  .btn--success {
+    color: #fff;
+    border-color: #95cd8b;
+    background-color: #95cd8b; }
+    .btn--success:hover {
+      border-color: #6ebb60;
+      background-color: #6ebb60; }
+  .btn[disabled] {
+    cursor: not-allowed;
+    color: #999;
+    border-color: #cccccc;
+    background-color: #cccccc; }
+  .btn--small {
+    padding: 4px 8px;
+    font-size: 12px; }
+  .btn--big {
+    padding: 8px 18px;
+    font-size: 16px; }
+
+/**
+ * Code
+ */
+code {
+  display: block;
+  padding: 12px;
+  background-color: whitesmoke;
+  white-space: pre-wrap;
+  overflow: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -moz-tab-size: 2;
+    -o-tab-size: 2;
+       tab-size: 2;
+  word-break: keep-all;
+  font-size: 12px;
+  border-radius: 5px; }
+
+/**
+ * Blockquote
+ */
+blockquote {
+  position: relative;
+  margin: 0;
+  padding: 12px 36px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  z-index: 5001; }
+  blockquote > label {
+    margin: 8px 0 0 24px;
+    display: block;
+    color: #999; }
+    blockquote > label:before {
+      content: '—';
+      margin-right: 4px; }
+  blockquote:before {
+    position: absolute;
+    content: '”';
+    color: #cccccc;
+    bottom: -111px;
+    right: -15px;
+    font-size: 128px;
+    z-index: -1; }
+  blockquote:after {
+    position: absolute;
+    content: '“';
+    color: #cccccc;
+    top: -56px;
+    left: -14px;
+    font-size: 128px;
+    z-index: -1; }
+
+/**
+ * Select
+ */
+select {
+  padding: 8px 24px 8px 8px;
+  -webkit-appearance: none;
+  color: #000;
+  font-weight: 300;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  background-size: 10px;
+  background-image: url("data:image/png;base64,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");
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  outline: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -ms-appearance: none;
+  cursor: pointer;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  border-radius: 5px; }
+  select, select:hover {
+    transition: all 0.2s ease; }
+  select:hover {
+    border-color: #29abe2; }
+  select[disabled] {
+    color: #999;
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    cursor: not-allowed; }
+  select[multiple] {
+    padding: 8px;
+    background-image: none; }
+
+select::-ms-expand {
+  display: none; }
+
+/**
+ * Breadcrumb
+ */
+.breadcrumb {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+  .breadcrumb > li {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000; }
+    .breadcrumb > li > a {
+      color: #999; }
+      .breadcrumb > li > a:hover {
+        color: #29abe2; }
+    .breadcrumb > li + li:before {
+      padding: 0 8px 0 4px;
+      content: '/';
+      color: #e0e0e0; }
+
+/*!
+ * UI-element: Checkbox
+ * Author: 	   Sam
+ * URL:		 	   https://codepen.io/Sambego/
+ * Edited by:  //nickdeny
+ */
+.checkbox {
+  position: relative;
+  cursor: pointer; }
+  .checkbox > input {
+    position: relative;
+    top: -6px;
+    cursor: pointer;
+    margin-right: 12px;
+    outline: none; }
+    .checkbox > input:disabled:before {
+      content: '×';
+      color: #999;
+      top: -6.5px;
+      left: 2.5px;
+      font-size: 24px;
+      border: none; }
+    .checkbox > input:before {
+      transition: all 0.3s ease-in-out;
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      z-index: 1;
+      width: 18px;
+      height: 18px;
+      border: 1.5px solid transparent;
+      border-radius: 5px; }
+    .checkbox > input:checked:before {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 0;
+      left: 4px;
+      height: 8px;
+      border-color: #29abe2;
+      border-top-style: none;
+      border-right-style: none;
+      border-radius: 0; }
+    .checkbox > input:after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 21px;
+      height: 21px;
+      background: whitesmoke;
+      cursor: pointer;
+      border-radius: 5px; }
+
+/**
+ * Input
+ */
+.control {
+  margin-top: 12px;
+  position: relative; }
+  .control.error input {
+    border-color: #eb2019; }
+  .control.success input {
+    border-color: #95cd8b; }
+  .control > input {
+    padding: 6px 18px;
+    font-size: 14px;
+    border: 0;
+    border-bottom: 1.5px solid #e0e0e0;
+    outline: none; }
+    .control > input, .control > input:hover {
+      transition: all 0.33s ease; }
+    .control > input:focus {
+      border-color: #29abe2; }
+    .control > input.active + label {
+      font-size: .7em;
+      bottom: 28px;
+      transition: all .33s ease; }
+  .control > label {
+    position: absolute;
+    left: 12px;
+    bottom: 7px;
+    color: #ccc;
+    transition: all .33s ease;
+    z-index: 1;
+    pointer-events: none; }
